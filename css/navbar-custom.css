@@ -1,7 +1,5 @@
 .navbar-inverse {
-	background-color: rgba(0,0,0,1);
-	border-radius: 0px;
-	border-line: 0px;
+	background-color: rgba(0,0,0,1) !important;
 }
 
 .aid-logo {
