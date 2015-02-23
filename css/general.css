@@ -1,0 +1,14 @@
+html,body {
+	background-color:#282828;
+	color: #fff;
+}
+
+.row {
+    display: table;
+}
+
+[class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
