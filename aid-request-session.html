@@ -1,24 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hey, it's Iggy!</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/navbar-custom.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-  <script src="js/navbarloader.js"></script>
+	<title>Iggy's Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>	
+	<link rel="stylesheet" href="css/navbar-custom.css">
+	<link rel="stylesheet" href="css/general.css">
+	<script src="js/navbarloader.js"></script>
+	<script src="js/requestformcontroller.js"></script>
+	
 </head>
 <body>
-<div class="navbar-space-fix">
-</div>
-<div id ="navbar-container">
-</div>
-<div class = "container">
-	
-</div>
+	<div class="navbar-space-fix">
+	</div>
+	<div id ="navbar-container">
+	</div>
+	<div class = "container">
+	<div class = "row">
+		<h1>Get AIDed now!</h1>
+		<p>Let us know about any upcoming social events or </p>
+	</div>
+	<form id="requestform">
+		<div class = "row">
+			<div class = "col-sm-5">
+				<div class="form-group has-feedback">
+					<label for="requesterName" class ="control-label">Full Name</label>
+					<input type="text" class="form-control" id="requesterName" placeholder="Enter Full Name" aria-describedby="requesterNameStatus">
+					<p class = "hide error-message control-label">Name cannot be empty.</p>
+				</div>
+			</div>
+			<div class = "col-sm-3">
+				<div class="form-group has-feedback">
+					<label for="requesterPhone" class ="control-label">Phone Number</label>
+					<input type="text" class="form-control" id="requesterPhone" placeholder="Enter Phone Number">
+					<p class = "hide error-message control-label">Phone cannot be empty.</p>
+				</div>
+			</div>
+			<div class = "col-sm-4">
+				<div class="form-group has-feedback">
+					<label for="requesterEmail" class ="control-label">Email address</label>
+					<input type="email" class="form-control" id="requesterEmail" placeholder="Enter email">
+					<p class = "hide error-message control-label">Email address is not valid</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class = "col-sm-4">
+				<div class="form-group has-feedback">
+					<label for="eventDate" class ="control-label">Event Date</label>
+						<input type="date" class="form-control datepicker" id="eventDate" placeholder="Enter Date">
+						<span class="add-on"><i class="icon-calendar"></i></span>
+						<p class = "hide error-message control-label">Date must be later than current date.</p>	
+				</div>
+			</div>
+			<div class = "col-sm-4">
+				<div class="form-group has-feedback">
+					<label for="startTime" class ="control-label">Start Time</label>
+					<input type="time" class="form-control" id="startTime" placeholder="Start Time">
+				</div>
+			</div>
+			<div class = "col-sm-4">
+				<div class="form-group has-feedback">
+					<label for="endTime" class="control-label">End Time</label>
+					<input type="time" class="form-control" id="endTime" placeholder="End Time">
+				</div>
+			</div>
+		</div>
+		<div class="row has-feedback">
+			<div class = "col-sm-12">
+				<div class="form-group" class ="control-label">
+					<label for ="eventDescription">Event Description</label>
+					<textarea class="form-control" id ="eventDescription" rows="3"></textarea>
+					<p class = "hide error-message control-label">Please write at least 100 characters of description.</p>
+				</div>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+	<hr/>
+		<footer>
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Copyright &copy; Ignatius Damai 2015</p>
+				</div>
+			</div>
+		</footer>
+	</div>
 
 </body>
 </html>
