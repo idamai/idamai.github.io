@@ -3,14 +3,23 @@ html,body {
 	color: #fff;
 }
 
-.row {
-    display: table;
+.row-same-height {
+    display: table !important;
 }
 
-[class*="col-"] {
-    float: none;
-    display: table-cell;
-    vertical-align: top;
+.col-same-height{
+    float: none !important;
+    display: table-cell !important;
+}
+
+.col-top {
+    vertical-align:top;
+}
+.col-middle {
+    vertical-align:middle;
+}
+.col-bottom {
+    vertical-align:bottom;
 }
 
 .img-responsive {
@@ -35,8 +44,4 @@ html,body {
 
 .navbar-space-fix {
 	min-height:50px;
-}
-
-.thumb {
-    margin-bottom: 30px;
 }
