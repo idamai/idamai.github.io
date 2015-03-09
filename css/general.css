@@ -1,3 +1,21 @@
+@media(min-width:760px){
+	#heyiggy-text > h1 {
+		font-size:54px;
+	}
+	#heyiggy-text > a {
+		font-size:24px;
+	}
+}
+
+@media(min-width:1600px){
+	#heyiggy-text > h1 {
+		font-size:72px;
+	}
+	#heyiggy-text > a {
+		font-size:32px;
+	}
+}
+
 html,body {
 	background-color:#282828;
 	color: #fff;
